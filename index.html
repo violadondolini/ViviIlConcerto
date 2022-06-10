@@ -1,0 +1,78 @@
+<!doctype html><html lang="it"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>ViviIlConcerto - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/415638b390.js" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJ8WD614YW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VJ8WD614YW');
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1><a href="#">VIVI IL CONCERTO</a></h1>
+    <h2>Tutto quello che ti serve per prepararti ad un evento</h2>
+    <nav>
+      <ul>
+        <li class="active"><a class="purplelink" href="#">home</a> </li>
+        <li> <a class="purplelink" href="localita.html">località</a> </li>
+        <li> <a class="purplelink" href="consigli_utili.html">consigli utili</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="primotesto">
+      <div class="w3-content w3-section" style="max-width:3000px">
+
+        <img class="mySlides w3-animate-fading" src="img/img1.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/img5.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/img6.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/img7.jpg" style="width:100%">
+      </div>
+
+      <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) { myIndex = 1 }
+          x[myIndex - 1].style.display = "block";
+          setTimeout(carousel, 9000);
+        }
+      </script>
+      <p><i>'Vivi Il Concerto'</i> è il primo sito che combina il tuo bisogno di informazioni con i nostri consigli, per
+        prepararti al meglio al tuo evento del cuore.
+        </br></br>
+        Qui troverai l'elenco degli artisti che si esibiscono in giro per l'Italia e, per ognuno, strumenti utili a
+        godere del 100% di quello che hanno da offrire.
+        </br></br>
+        CHE ASPETTI? SCEGLI UN EVENTO E <i>VIVILO</i> INSIEME A NOI!
+      </p>
+
+    </section>
+
+  </main>
+  <footer>
+    <p>© Viola Dondolini</p>
+    <a class="instagram" target="_blank" href="latuapagina"><i class="fa-brands fa-instagram"></i></a>
+    <a class="documentazione" href="documentazione.html" target="_blank">Documentazione</a>
+
+  </footer>
+</body>
+
+</html>
